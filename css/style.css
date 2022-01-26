@@ -1,0 +1,231 @@
+:root {
+    --color1: #FF6363;
+    --color2: #54123B;
+    --color3: #323232;
+    ---color3-child: #262626;
+    --color4: #2c2a2a;
+}
+
+@font-face {
+    font-family: "yekan";
+    src: url("../fonts/Yekan.ttf");
+}
+
+@font-face {
+    font-family: "sans";
+    src: url("../fonts/IRANSans.ttf");
+}
+
+* {
+    font-family: 'sans';
+}
+
+code * {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    word-spacing: 5px;
+    margin-left: 5px;
+
+}
+
+a[isActive] {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+#docHeaderContainer h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#docHeaderContainer p {
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.docs-nav {
+    background-color: var(--color3);
+}
+
+.docs-header {
+    background-color: var(--color1);
+    display: flex;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    background-color: var(--color3);
+    background-image: url('../img/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.docs-content {
+    background-color: #262626d4;
+    backdrop-filter: blur(14px);
+    color: #e1e0e0;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    margin-top: 2%;
+
+
+}
+
+.sidebar .nav>li>a {
+    color: #fff;
+}
+
+.banner {
+    background-color: rgb(44 42 42 / 70%);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border: none;
+}
+
+.row {
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.hljs {
+    background: #181818;
+    padding: 3px;
+}
+
+.sidebar .nav>.active>a, .sidebar .nav>li>a:hover, .sidebar .nav>li>a:focus {
+    color: #dbd2d2
+}
+
+#container-banner {
+    flex-direction: row;
+    padding: 13px;
+    display: flex;
+
+
+
+}
+
+#container-banner>a {
+    margin-left: 20px;
+    color: #e7e7e7;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+#header-vt {
+    visibility: hidden;
+}
+
+#docHeaderContainer * {
+    margin-right: 0;
+    text-align: right;
+    color: white;
+}
+
+.footer-heart {
+    text-align: center;
+    color: white;
+}
+
+.footer-heart a {
+    border-bottom: 1px solid #453886;
+    color: #453886;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.footer-heart a:hover {
+    color: #2196f3;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.emoji {
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width : 767px) {
+    #container-banner>a {
+        font-size: 12px;
+    }
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+.small-header {
+    padding-top: 30px;
+    font-weight: bolder;
+}
+
+p {
+    line-height: 30px;
+}
+
+.contentBlock {
+    background-color: #2c2b2b;
+    background-color: #2c2b2b00;
+    margin-bottom: 21px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.list div {
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #282727;
+    border-right: solid 5px var(--color1);
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    line-height: 25px;
+
+}
+
+.code {
+    text-align: left;
+}
+
+.list-item span {
+    display: block;
+}
+
+.list-item[col] {
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.left {
+    text-align: left;
+}
